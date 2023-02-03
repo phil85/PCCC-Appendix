@@ -1,4 +1,4 @@
-# PCCC-Appendix
+# PCCC - External appendix
 
 On this repository, we provide the detailed computational results of the PCCC-Algorithm.
 
