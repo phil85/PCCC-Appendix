@@ -24,4 +24,4 @@ On this repository, we provide the detailed computational results of the PCCC-Al
 
 #### Results on noisy constraint sets:
 
-- [Tables W33-W46 (ARI)](tables/w33-w46.pdf)
+- [Tables W43-W46 (ARI)](tables/w43-w46.pdf)
