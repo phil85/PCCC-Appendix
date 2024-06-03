@@ -1,3 +1,4 @@
 compile_tables.py
 *.tex
 tbls/
+style_file.sty
