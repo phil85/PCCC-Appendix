@@ -28,10 +28,11 @@ def create_file(latex_file_name, metric, folder, collection, constraint_set, cap
 
         f.write(r'\end{document}' + '\n')
 
+constraint_sets = [0, 0.5, 1, 5]
 
 # %% ARI
 
-table_counter = 4
+table_counter = 99
 collection = 'COL4'
 metric_abbreviation = 'ARI'
 metric = 'Average Adjusted Rand Index (ARI) values'
@@ -41,7 +42,7 @@ meaning_bold = 'The highest values are stated in bold.'
 k_means = 'The column KMEANS reports the average ARI values that were obtained with the unconstrained k-means algorithm.'
 meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 1,800 seconds.'
 
-for constraint_set in [0, 0.5, 1, 5]:
+for constraint_set in constraint_sets:
     latex_file_name = '{:s}-{:s}-{:g}.tex'.format(metric_abbreviation, collection, constraint_set)
     constraint_set_str = 'obtained with constraint sets of size {:g}\% CS.'.format(constraint_set)
     caption = ('{:s} {:s} {:s} {:s} {:s} {:s} {:s}'.format(metric,
@@ -66,8 +67,8 @@ for constraint_set in [0, 0.5, 1, 5]:
 
 # %% Silhouette
 
-table_counter = 8
-collection = 'COL1'
+table_counter = 103
+collection = 'COL4'
 metric_abbreviation = 'Silhouette'
 metric = 'Average Silhouette coefficients'
 algorithms = 'of the PCCC and the PCCC-R algorithms and the four state-of-the-art algorithms (COPKM, CSC, DILS, LCC)'
@@ -77,7 +78,7 @@ k_means = 'The column KMEANS reports the average Silhouette coefficients that we
 ground_truth = 'The column GT reports the Silhouette coefficients of the ground truth assignment.'
 meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 1,800 seconds.'
 
-for constraint_set in [5, 10, 15, 20]:
+for constraint_set in constraint_sets:
     latex_file_name = '{:s}-{:s}-{:d}.tex'.format(metric_abbreviation, collection, constraint_set)
     constraint_set_str = 'obtained with constraint sets of size {:d}\% CS.'.format(constraint_set)
     caption = ('{:s} {:s} {:s} {:s} {:s} {:s} {:s} {:s}'.format(metric,
@@ -89,7 +90,7 @@ for constraint_set in [5, 10, 15, 20]:
                                                                 ground_truth,
                                                                 meaning_hyphen))
 
-    create_file(latex_file_name, metric='silhouette', folder='revision_experiment2', collection='col1',
+    create_file(latex_file_name, metric='silhouette', folder='revision_experiment5', collection='col4',
                 constraint_set=constraint_set, caption=caption, table_counter=table_counter)
 
     table_counter += 1
@@ -103,8 +104,8 @@ for constraint_set in [5, 10, 15, 20]:
 
 # %% CPU
 
-table_counter = 8
-collection = 'COL1'
+table_counter = 107
+collection = 'COL4'
 metric_abbreviation = 'CPU'
 metric = 'Average running times (in seconds)'
 algorithms = 'of the PCCC and the PCCC-R algorithms and the four state-of-the-art algorithms (COPKM, CSC, DILS, LCC)'
@@ -113,7 +114,7 @@ meaning_bold = 'The lowest values are stated in bold.'
 k_means = 'The column KMEANS reports the average running time of the unconstrained k-means algorithm.'
 meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 1,800 seconds.'
 
-for constraint_set in [5, 10, 15, 20]:
+for constraint_set in constraint_sets:
     latex_file_name = '{:s}-{:s}-{:d}.tex'.format(metric_abbreviation, collection, constraint_set)
     constraint_set_str = 'for the constraint sets of size {:d}\% CS.'.format(constraint_set)
     caption = ('{:s} {:s} {:s} {:s} {:s} {:s} {:s}'.format(metric,
@@ -124,7 +125,7 @@ for constraint_set in [5, 10, 15, 20]:
                                                            k_means,
                                                            meaning_hyphen))
 
-    create_file(latex_file_name, metric='cpu', folder='revision_experiment2', collection='col1',
+    create_file(latex_file_name, metric='cpu', folder='revision_experiment5', collection='col4',
                 constraint_set=constraint_set, caption=caption, table_counter=table_counter)
 
     table_counter += 1
@@ -135,3 +136,37 @@ for constraint_set in [5, 10, 15, 20]:
     # Delete auxiliary files
     os.system('rm tables/*.aux')
     os.system('rm tables/*.log')
+
+# %%
+
+# Open file
+table_counter = 75
+collection = 'COL4'
+# metrics = ['ARI', 'Inertia', 'Silhouette', 'Violations', 'CPU']
+metrics = ['ARI', 'Silhouette', 'CPU']
+
+with open('markdown_table_col4.txt', 'w') as f:
+
+    # Add header
+    header_str = '| Metric' + '|'
+    for i in constraint_sets:
+        header_str = header_str + str(i) + '% CS' + ' | '
+    header_str += '\n'
+
+    f.write(header_str)
+
+    table_str = '|:-----|'
+    for i in constraint_sets:
+        table_str = table_str + '-----|'
+    table_str += '\n'
+
+    f.write(table_str)
+
+    for metric in metrics:
+        row_str = '| ' + metric + '|'
+        for i in constraint_sets:
+            row_str = row_str + ' [Table W{:d}](tables/'.format(table_counter) + metric + '-' + collection + '-' + str(i) + '.pdf)|'
+            table_counter += 1
+        row_str += '|\n'
+
+        f.write(row_str)

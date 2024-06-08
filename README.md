@@ -41,6 +41,14 @@ On this repository, we provide the detailed computational results of the PCCC-Al
 | Violations | [Table W90](tables/Violations-COL3-0.pdf) | [Table W91](tables/Violations-COL3-5.pdf) | [Table W92](tables/Violations-COL3-10.pdf) | [Table W93](tables/Violations-COL3-15.pdf) | [Table W94](tables/Violations-COL3-20.pdf) ||
 | CPU        | [Table W95](tables/CPU-COL3-0.pdf)        | [Table W96](tables/CPU-COL3-5.pdf)        | [Table W97](tables/CPU-COL3-10.pdf)        | [Table W98](tables/CPU-COL3-15.pdf)        | [Table W99](tables/CPU-COL3-20.pdf)        ||
 
+#### Results on data sets from collection COL4:
+
+| Metric     | 0% CS                                     | 0.5% CS                                     | 1% CS                                     | 5% CS                                     | 
+|:-----------|-------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| ARI        | [Table W75](tables/ARI-COL4-0.pdf)        | [Table W76](tables/ARI-COL4-0.5.pdf)        | [Table W77](tables/ARI-COL4-1.pdf)        | [Table W78](tables/ARI-COL4-5.pdf)        ||
+| Silhouette | [Table W79](tables/Silhouette-COL4-0.pdf) | [Table W80](tables/Silhouette-COL4-0.5.pdf) | [Table W81](tables/Silhouette-COL4-1.pdf) | [Table W82](tables/Silhouette-COL4-5.pdf) ||
+| CPU        | [Table W83](tables/CPU-COL4-0.pdf)        | [Table W84](tables/CPU-COL4-0.5.pdf)        | [Table W85](tables/CPU-COL4-1.pdf)        | [Table W86](tables/CPU-COL4-5.pdf)        ||
+
 #### Results on noisy constraint sets:
 
 | Metric                                 | 5% CS                                     | 10% CS                                     | 15% CS                                     | 20% CS                                     |
