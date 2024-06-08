@@ -1,4 +1,6 @@
 compile_tables_col1.py
+compile_tables_col2.py
+compile_tables_col3.py
 compile_tables_col4.py
 *.tex
 tbls/
