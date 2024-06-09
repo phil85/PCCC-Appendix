@@ -46,7 +46,7 @@ for collection in ['COL1', 'COL2', 'COL3', 'COL4']:
     latex_file_name = 'Constraints-{:s}.tex'.format(collection)
 
     if collection == 'COL2':
-        create_file(latex_file_name, caption, table_counter, fontsize=r'\tiny', tabcolsep='3pt')
+        create_file(latex_file_name, caption, table_counter, fontsize=r'\scriptsize', tabcolsep='3pt')
     else:
         create_file(latex_file_name, caption, table_counter=table_counter)
 
