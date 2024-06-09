@@ -79,8 +79,8 @@ ground_truth = 'The column GT reports the Silhouette coefficients of the ground 
 meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 1,800 seconds.'
 
 for constraint_set in constraint_sets:
-    latex_file_name = '{:s}-{:s}-{:d}.tex'.format(metric_abbreviation, collection, constraint_set)
-    constraint_set_str = 'obtained with constraint sets of size {:d}\% CS.'.format(constraint_set)
+    latex_file_name = '{:s}-{:s}-{:g}.tex'.format(metric_abbreviation, collection, constraint_set)
+    constraint_set_str = 'obtained with constraint sets of size {:g}\% CS.'.format(constraint_set)
     caption = ('{:s} {:s} {:s} {:s} {:s} {:s} {:s} {:s}'.format(metric,
                                                                 algorithms,
                                                                 constraint_set_str,
@@ -115,8 +115,8 @@ k_means = 'The column KMEANS reports the average running time of the unconstrain
 meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 1,800 seconds.'
 
 for constraint_set in constraint_sets:
-    latex_file_name = '{:s}-{:s}-{:d}.tex'.format(metric_abbreviation, collection, constraint_set)
-    constraint_set_str = 'for the constraint sets of size {:d}\% CS.'.format(constraint_set)
+    latex_file_name = '{:s}-{:s}-{:g}.tex'.format(metric_abbreviation, collection, constraint_set)
+    constraint_set_str = 'for the constraint sets of size {:g}\% CS.'.format(constraint_set)
     caption = ('{:s} {:s} {:s} {:s} {:s} {:s} {:s}'.format(metric,
                                                            algorithms,
                                                            constraint_set_str,
@@ -137,13 +137,80 @@ for constraint_set in constraint_sets:
     os.system('rm tables/*.aux')
     os.system('rm tables/*.log')
 
+# %% Inertia
+
+table_counter = 89
+collection = 'COL4'
+metric_abbreviation = 'Inertia'
+metric = 'Minimum Inertia values'
+algorithms = 'of the PCCC and the PCCC-N2-S algorithms'
+interpretation = 'Lower values indicate more coherent clusters.'
+meaning_bold = 'The lowest values are stated in bold.'
+k_means = 'The column KMEANS reports the minimum inertia value obtained with the k-means algorithm.'
+meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 3,600 seconds.'
+
+for constraint_set in constraint_sets:
+    latex_file_name = '{:s}-{:s}-{:g}.tex'.format(metric_abbreviation, collection, constraint_set)
+    constraint_set_str = 'for the constraint sets of size {:g}\% CS.'.format(constraint_set)
+    caption = ('{:s} {:s} {:s} {:s} {:s} {:s} {:s}'.format(metric,
+                                                           algorithms,
+                                                           constraint_set_str,
+                                                           interpretation,
+                                                           meaning_bold,
+                                                           k_means,
+                                                           meaning_hyphen))
+
+    create_file(latex_file_name, metric='inertia', folder='revision_experiment5', collection='col4',
+                constraint_set=constraint_set, caption=caption, table_counter=table_counter)
+
+    table_counter += 1
+
+    # Compile latex file W1-W4.tex
+    os.system('pdflatex latex_files/' + latex_file_name + ' -output-directory=tables')
+
+    # Delete auxiliary files
+    os.system('rm tables/*.aux')
+    os.system('rm tables/*.log')
+
+# %% Violations
+
+table_counter = 94
+collection = 'COL4'
+metric_abbreviation = 'Violations'
+metric = 'Average number of cannot-link constraint violations'
+algorithms = 'of the PCCC and the PCCC-N2-S algorithms'
+meaning_bold = 'The lowest values are stated in bold.'
+k_means = 'The column KMEANS reports the average number of cannot-link constraint violations obtained with the k-means algorithm.'
+meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 1,800 seconds.'
+
+for constraint_set in constraint_sets:
+    latex_file_name = '{:s}-{:s}-{:g}.tex'.format(metric_abbreviation, collection, constraint_set)
+    constraint_set_str = 'for the constraint sets of size {:g}\% CS.'.format(constraint_set)
+    caption = ('{:s} {:s} {:s} {:s} {:s} {:s}'.format(metric,
+                                                           algorithms,
+                                                           constraint_set_str,
+                                                           meaning_bold,
+                                                           k_means,
+                                                           meaning_hyphen))
+
+    create_file(latex_file_name, metric='n_cl_violations', folder='revision_experiment5', collection='col4',
+                constraint_set=constraint_set, caption=caption, table_counter=table_counter)
+
+    table_counter += 1
+
+    # Compile latex file W1-W4.tex
+    os.system('pdflatex latex_files/' + latex_file_name + ' -output-directory=tables')
+
+    # Delete auxiliary files
+    os.system('rm tables/*.aux')
+    os.system('rm tables/*.log')
+
 # %%
 
 # Open file
 table_counter = 75
 collection = 'COL4'
-# metrics = ['ARI', 'Inertia', 'Silhouette', 'Violations', 'CPU']
-metrics = ['ARI', 'Silhouette', 'CPU']
+metrics = ['ARI', 'Inertia', 'Silhouette', 'Violations', 'CPU']
 
 with open('markdown_table_col4.txt', 'w') as f:
 
