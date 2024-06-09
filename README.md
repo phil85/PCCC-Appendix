@@ -13,13 +13,13 @@ On this repository, we provide the detailed computational results of the PCCC-Al
 
 #### Results on data sets from collection COL1:
 
-| Metric                                 | 5% CS                               | 10% CS                               | 15% CS                               | 20% CS                               |
-|:---------------------------------------|-------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
-| ARI                                    | [Table W5](tables/ARI-COL1-5.pdf)         | [Table W6](tables/ARI-COL1-10.pdf)         | [Table W7](tables/ARI-COL1-15.pdf)         | [Table W8](tables/ARI-COL1-20.pdf)         |
-| Inertia                                | [Table W9](tables/Inertia-COL1-5.pdf)     | [Table W10](tables/Inertia-COL1-10.pdf)    | [Table W11](tables/Inertia-COL1-15.pdf)    | [Table W12](tables/Inertia-COL1-20.pdf)    |
-| Silhouette                             | [Table W13](tables/Silhouette-COL1-5.pdf) | [Table W14](tables/Silhouette-COL1-10.pdf) | [Table W15](tables/Silhouette-COL1-15.pdf) | [Table W16](tables/Silhouette-COL1-20.pdf) |
-| Violations of cannot-link constraints  | [Table W17](tables/Violations-COL1-5.pdf) | [Table W18](tables/Violations-COL1-10.pdf) | [Table W19](tables/Violations-COL1-15.pdf) | [Table W20](tables/Violations-COL1-20.pdf) |
-| Running time                           | [Table W21](tables/CPU-COL1-5.pdf)        | [Table W22](tables/CPU-COL1-10.pdf) | [Table W23](tables/CPU-COL1-15.pdf) | [Table W24](tables/CPU-COL1-20.pdf) |
+| Metric|5% CS | 10% CS | 15% CS | 20% CS | 
+|:-----|-----|-----|-----|-----|
+| ARI| [Table W5](tables/ARI-COL1-5.pdf)| [Table W6](tables/ARI-COL1-10.pdf)| [Table W7](tables/ARI-COL1-15.pdf)| [Table W8](tables/ARI-COL1-20.pdf)||
+| Inertia| [Table W9](tables/Inertia-COL1-5.pdf)| [Table W10](tables/Inertia-COL1-10.pdf)| [Table W11](tables/Inertia-COL1-15.pdf)| [Table W12](tables/Inertia-COL1-20.pdf)||
+| Silhouette| [Table W13](tables/Silhouette-COL1-5.pdf)| [Table W14](tables/Silhouette-COL1-10.pdf)| [Table W15](tables/Silhouette-COL1-15.pdf)| [Table W16](tables/Silhouette-COL1-20.pdf)||
+| Violations| [Table W17](tables/Violations-COL1-5.pdf)| [Table W18](tables/Violations-COL1-10.pdf)| [Table W19](tables/Violations-COL1-15.pdf)| [Table W20](tables/Violations-COL1-20.pdf)||
+| CPU| [Table W21](tables/CPU-COL1-5.pdf)| [Table W22](tables/CPU-COL1-10.pdf)| [Table W23](tables/CPU-COL1-15.pdf)| [Table W24](tables/CPU-COL1-20.pdf)||
 
 #### Results on data sets from collection COL2:
 
