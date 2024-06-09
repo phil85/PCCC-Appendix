@@ -43,7 +43,7 @@ for collection in ['COL1', 'COL2', 'COL3', 'COL4']:
     caption = ('Number of must-link (ML) and cannot-link (CL) constraints in the different '
                'constraint sets of collection {:s}.').format(collection)
 
-    latex_file_name = 'constraints-{:s}.tex'.format(collection)
+    latex_file_name = 'Constraints-{:s}.tex'.format(collection)
 
     if collection == 'COL2':
         create_file(latex_file_name, caption, table_counter, fontsize=r'\tiny', tabcolsep='3pt')

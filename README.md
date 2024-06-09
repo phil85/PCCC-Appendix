@@ -7,7 +7,7 @@ On this repository, we provide the detailed computational results of the PCCC-Al
 | Collection          | Information on constraint sets          |
 |:--------------------|:----------------------------------------|
 | COL1 (25 data sets) | [Table W1](tables/Constraints-COL1.pdf) |
-| COL2 (45 data sets) | [Table W2](tables/Constraints-COL2.pdf) |
+| COL2 (15 data sets) | [Table W2](tables/Constraints-COL2.pdf) |
 | COL3 (24 data sets) | [Table W3](tables/Constraints-COL3.pdf) |
 | COL4 (6 data sets)  | [Table W4](tables/Constraints-COL4.pdf) |
 
