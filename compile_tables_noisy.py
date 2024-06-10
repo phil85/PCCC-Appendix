@@ -30,11 +30,11 @@ def create_file(latex_file_name, metric, folder, collection, constraint_set, cap
 
 
 constraint_sets = [5, 10, 15, 20]
+table_counter = 119
+collection = 'COL1'
 
 # %% ARI
 
-table_counter = 115
-collection = 'COL1'
 metric_abbreviation = 'ARI'
 metric = 'Average Adjusted Rand Index (ARI) values'
 algorithms = 'of the PCCC algorithms and the state-of-the-art algorithm (CSC)'
@@ -68,10 +68,8 @@ for constraint_set in constraint_sets:
 
 # %%
 
-# Open file
-table_counter = 114
-collection = 'COL1'
 metrics = ['ARI']
+table_counter = 120
 
 with open('markdown_table_noisy.txt', 'w') as f:
 
@@ -93,7 +91,7 @@ with open('markdown_table_noisy.txt', 'w') as f:
     for metric in metrics:
         row_str = '| ' + metric + '|'
         for i in constraint_sets:
-            row_str = row_str + ' [Table W{:d}](tables/'.format(table_counter) + metric + '-' + collection + '-' + str(i) + '.pdf)|'
+            row_str = row_str + ' [Table W{:d}](tables/'.format(table_counter) + metric + '-' + collection + '-' + str(i) + '-noisy.pdf)|'
             table_counter += 1
         row_str += '|\n'
 

@@ -55,4 +55,4 @@ On this repository, we provide the detailed computational results of the PCCC-Al
 
 | Metric|5% CS | 10% CS | 15% CS | 20% CS | 
 |:-----|-----|-----|-----|-----|
-| ARI| [Table W114](tables/ARI-COL1-5.pdf)| [Table W115](tables/ARI-COL1-10.pdf)| [Table W116](tables/ARI-COL1-15.pdf)| [Table W117](tables/ARI-COL1-20.pdf)||
+| ARI| [Table W120](tables/ARI-COL1-5-noisy.pdf)| [Table W121](tables/ARI-COL1-10-noisy.pdf)| [Table W122](tables/ARI-COL1-15-noisy.pdf)| [Table W123](tables/ARI-COL1-20-noisy.pdf)||
