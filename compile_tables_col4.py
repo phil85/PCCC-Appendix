@@ -29,11 +29,12 @@ def create_file(latex_file_name, metric, folder, collection, constraint_set, cap
         f.write(r'\end{document}' + '\n')
 
 constraint_sets = [0, 0.5, 1, 5]
+table_counter = 99
+collection = 'COL4'
+
 
 # %% ARI
 
-table_counter = 99
-collection = 'COL4'
 metric_abbreviation = 'ARI'
 metric = 'Average Adjusted Rand Index (ARI) values'
 algorithms = 'of the PCCC and the PCCC-R algorithms and the four state-of-the-art algorithms (COPKM, CSC, DILS, LCC)'

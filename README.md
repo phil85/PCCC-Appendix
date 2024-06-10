@@ -35,11 +35,11 @@ On this repository, we provide the detailed computational results of the PCCC-Al
 
 | Metric|0% CS | 5% CS | 10% CS | 15% CS | 20% CS | 
 |:-----|-----|-----|-----|-----|-----|
-| ARI| [Table W74](tables/ARI-COL3-0.pdf)| [Table W75](tables/ARI-COL3-5.pdf)| [Table W76](tables/ARI-COL3-10.pdf)| [Table W77](tables/ARI-COL3-15.pdf)| [Table W78](tables/ARI-COL3-20.pdf)||
-| Inertia| [Table W79](tables/Inertia-COL3-0.pdf)| [Table W80](tables/Inertia-COL3-5.pdf)| [Table W81](tables/Inertia-COL3-10.pdf)| [Table W82](tables/Inertia-COL3-15.pdf)| [Table W83](tables/Inertia-COL3-20.pdf)||
-| Silhouette| [Table W84](tables/Silhouette-COL3-0.pdf)| [Table W85](tables/Silhouette-COL3-5.pdf)| [Table W86](tables/Silhouette-COL3-10.pdf)| [Table W87](tables/Silhouette-COL3-15.pdf)| [Table W88](tables/Silhouette-COL3-20.pdf)||
-| Violations| [Table W89](tables/Violations-COL3-0.pdf)| [Table W90](tables/Violations-COL3-5.pdf)| [Table W91](tables/Violations-COL3-10.pdf)| [Table W92](tables/Violations-COL3-15.pdf)| [Table W93](tables/Violations-COL3-20.pdf)||
-| CPU| [Table W94](tables/CPU-COL3-0.pdf)| [Table W95](tables/CPU-COL3-5.pdf)| [Table W96](tables/CPU-COL3-10.pdf)| [Table W97](tables/CPU-COL3-15.pdf)| [Table W98](tables/CPU-COL3-20.pdf)||
+| ARI| [Table W75](tables/ARI-COL3-0.pdf)| [Table W76](tables/ARI-COL3-5.pdf)| [Table W77](tables/ARI-COL3-10.pdf)| [Table W78](tables/ARI-COL3-15.pdf)| [Table W79](tables/ARI-COL3-20.pdf)||
+| Inertia| [Table W80](tables/Inertia-COL3-0.pdf)| [Table W81](tables/Inertia-COL3-5.pdf)| [Table W82](tables/Inertia-COL3-10.pdf)| [Table W83](tables/Inertia-COL3-15.pdf)| [Table W84](tables/Inertia-COL3-20.pdf)||
+| Silhouette| [Table W85](tables/Silhouette-COL3-0.pdf)| [Table W86](tables/Silhouette-COL3-5.pdf)| [Table W87](tables/Silhouette-COL3-10.pdf)| [Table W88](tables/Silhouette-COL3-15.pdf)| [Table W89](tables/Silhouette-COL3-20.pdf)||
+| Violations| [Table W90](tables/Violations-COL3-0.pdf)| [Table W91](tables/Violations-COL3-5.pdf)| [Table W92](tables/Violations-COL3-10.pdf)| [Table W93](tables/Violations-COL3-15.pdf)| [Table W94](tables/Violations-COL3-20.pdf)||
+| CPU| [Table W95](tables/CPU-COL3-0.pdf)| [Table W96](tables/CPU-COL3-5.pdf)| [Table W97](tables/CPU-COL3-10.pdf)| [Table W98](tables/CPU-COL3-15.pdf)| [Table W99](tables/CPU-COL3-20.pdf)||
 
 #### Results on data sets from collection COL4:
 
