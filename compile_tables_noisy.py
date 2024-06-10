@@ -45,7 +45,7 @@ meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no
 
 for constraint_set in constraint_sets:
     latex_file_name = '{:s}-{:s}-{:g}-noisy.tex'.format(metric_abbreviation, collection, constraint_set)
-    constraint_set_str = 'obtained with constraint sets of size {:g}\% CS.'.format(constraint_set)
+    constraint_set_str = 'obtained with noisy constraint sets of size {:g}\% NCS.'.format(constraint_set)
     caption = ('{:s} {:s} {:s} {:s} {:s} {:s} {:s}'.format(metric,
                                                            algorithms,
                                                            constraint_set_str,
