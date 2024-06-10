@@ -45,7 +45,7 @@ algorithms = 'of the versions of the PCCC algorithm and the four state-of-the-ar
 interpretation = 'Higher values indicate more overlap with the ground truth assignment.'
 meaning_bold = 'The highest values are stated in bold.'
 k_means = 'The column KMEANS reports the average ARI values that were obtained with the unconstrained k-means algorithm.'
-meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 1,800 seconds.'
+meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 3.600 seconds.'
 
 for constraint_set in constraint_sets:
     latex_file_name = '{:s}-{:s}-{:g}.tex'.format(metric_abbreviation, collection, constraint_set)
@@ -112,7 +112,7 @@ interpretation = 'Higher values indicate better separated clusters.'
 meaning_bold = 'The highest values are stated in bold.'
 k_means = 'The column KMEANS reports the average Silhouette coefficients that were obtained with the unconstrained k-means algorithm.'
 ground_truth = 'The column GT reports the Silhouette coefficients of the ground truth assignment.'
-meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 1,800 seconds.'
+meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 3.600 seconds.'
 
 for constraint_set in constraint_sets:
     latex_file_name = '{:s}-{:s}-{:g}.tex'.format(metric_abbreviation, collection, constraint_set)
@@ -145,7 +145,7 @@ metric = 'Average number of cannot-link constraint violations'
 algorithms = 'of the versions of the PCCC algorithm and the four state-of-the-art algorithms (COPKM, CSC, DILS, LCC)'
 meaning_bold = 'The lowest values are stated in bold.'
 k_means = 'The column KMEANS reports the average number of cannot-link constraint violations obtained with the k-means algorithm.'
-meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 1,800 seconds.'
+meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 3.600 seconds.'
 
 for constraint_set in constraint_sets:
     latex_file_name = '{:s}-{:s}-{:g}.tex'.format(metric_abbreviation, collection, constraint_set)
@@ -177,7 +177,7 @@ algorithms = 'of the versions of the PCCC algorithm and the four state-of-the-ar
 interpretation = 'Higher values indicate better separated clusters.'
 meaning_bold = 'The lowest values are stated in bold.'
 k_means = 'The column KMEANS reports the average running time of the unconstrained k-means algorithm.'
-meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 1,800 seconds.'
+meaning_hyphen = 'The hyphen indicates that the respective algorithm returned no solution within the time limit of 3.600 seconds.'
 
 for constraint_set in constraint_sets:
     latex_file_name = '{:s}-{:s}-{:g}.tex'.format(metric_abbreviation, collection, constraint_set)
