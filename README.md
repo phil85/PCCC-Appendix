@@ -45,11 +45,11 @@ On this repository, we provide the detailed computational results of the PCCC-Al
 
 | Metric|0% CS | 0.5% CS | 1% CS | 5% CS | 
 |:-----|-----|-----|-----|-----|
-| ARI| [Table W75](tables/ARI-COL4-0.pdf)| [Table W76](tables/ARI-COL4-0.5.pdf)| [Table W77](tables/ARI-COL4-1.pdf)| [Table W78](tables/ARI-COL4-5.pdf)||
-| Inertia| [Table W79](tables/Inertia-COL4-0.pdf)| [Table W80](tables/Inertia-COL4-0.5.pdf)| [Table W81](tables/Inertia-COL4-1.pdf)| [Table W82](tables/Inertia-COL4-5.pdf)||
-| Silhouette| [Table W83](tables/Silhouette-COL4-0.pdf)| [Table W84](tables/Silhouette-COL4-0.5.pdf)| [Table W85](tables/Silhouette-COL4-1.pdf)| [Table W86](tables/Silhouette-COL4-5.pdf)||
-| Violations| [Table W87](tables/Violations-COL4-0.pdf)| [Table W88](tables/Violations-COL4-0.5.pdf)| [Table W89](tables/Violations-COL4-1.pdf)| [Table W90](tables/Violations-COL4-5.pdf)||
-| CPU| [Table W91](tables/CPU-COL4-0.pdf)| [Table W92](tables/CPU-COL4-0.5.pdf)| [Table W93](tables/CPU-COL4-1.pdf)| [Table W94](tables/CPU-COL4-5.pdf)||
+| ARI| [Table W100](tables/ARI-COL4-0.pdf)| [Table W101](tables/ARI-COL4-0.5.pdf)| [Table W102](tables/ARI-COL4-1.pdf)| [Table W103](tables/ARI-COL4-5.pdf)||
+| Inertia| [Table W104](tables/Inertia-COL4-0.pdf)| [Table W105](tables/Inertia-COL4-0.5.pdf)| [Table W106](tables/Inertia-COL4-1.pdf)| [Table W107](tables/Inertia-COL4-5.pdf)||
+| Silhouette| [Table W108](tables/Silhouette-COL4-0.pdf)| [Table W109](tables/Silhouette-COL4-0.5.pdf)| [Table W110](tables/Silhouette-COL4-1.pdf)| [Table W111](tables/Silhouette-COL4-5.pdf)||
+| Violations| [Table W112](tables/Violations-COL4-0.pdf)| [Table W113](tables/Violations-COL4-0.5.pdf)| [Table W114](tables/Violations-COL4-1.pdf)| [Table W115](tables/Violations-COL4-5.pdf)||
+| CPU| [Table W116](tables/CPU-COL4-0.pdf)| [Table W117](tables/CPU-COL4-0.5.pdf)| [Table W118](tables/CPU-COL4-1.pdf)| [Table W119](tables/CPU-COL4-5.pdf)||
 
 #### Results on noisy constraint sets:
 
